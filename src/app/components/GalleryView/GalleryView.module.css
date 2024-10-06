@@ -1,0 +1,48 @@
+.gallery_layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+
+.gallery_lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.gallery_layout div, .gallery_layout div img {
+  width: 100%;
+}
+
+.gallery_layout div img {
+  object-fit: cover;
+}
+
+.line {
+  height: 2px;
+  margin: 0 1% 0 0;
+  background-color: #bbb;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.line_fill {
+  height: 100%;
+  background-color: var(--primary-color);
+  width: 0%;
+  animation: fillLine linear forwards;
+}
+
+@keyframes fillLine {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

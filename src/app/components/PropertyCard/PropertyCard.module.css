@@ -1,0 +1,112 @@
+.property_card {
+    width: 22vw;
+    height: auto;
+    background-color: var(--secondary-color);
+    border: 1.5px solid rgba(0, 0, 0, 0);
+    padding: 1vw;
+    border-radius: 10px;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .property_card:hover {
+    background-color: white !important;
+    border: 1.5px solid var(--primary-color);
+    clip-path: inset(0 0 0 0);
+  }
+  
+  .property_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .property_buttons a{
+    width: 35%;
+  }
+  
+  .property_buttons a svg{
+    margin-right: 5px;
+  }
+  
+  .buttonProperty:hover > svg path{
+    fill: var(--primary-color) !important;
+  }
+  
+  .buttonEye:hover > svg .pathEye{
+    stroke: var(--primary-color);
+  }
+  
+  .property_buttons a img{
+    width: 1vw;
+    height: auto;
+  }
+  
+  .property_buttons a:first-child{
+    margin-right: 10px;
+  }
+  
+  .property_card h2 {
+    text-align: start;
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 2vh;
+    margin-right: auto;
+    width: 100%;
+    font-size: 1.7em;
+  }
+  
+  .image_property,
+  .image_property_loading {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .property_card a {
+    display: none;
+    margin-top: 2vh;
+    justify-content: center;
+    font-size: 1.1vw;
+    font-weight: 400 !important;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+  
+  .property_card:hover a {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+  }
+  
+  .price {
+    color: green !important;
+  }
+  
+  .gallery_div {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .imageShowed {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @media (max-width: 1000px) {
+    .property_card {
+      width: 70% !important;
+      font-size: 1em;
+      gap: 0 !important;
+    }
+  }

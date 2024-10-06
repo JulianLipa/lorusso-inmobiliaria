@@ -1,0 +1,40 @@
+.property_bar {
+  display: flex;
+  margin-top: 2vh;
+  color: var(--primary-color) !important;
+}
+
+.property_bar div {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.property_detail {
+  border: 1.5px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0 1%;
+  margin: 0 2% 2% 0;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 3em;
+}
+
+.property_detail img {
+  width: 1em;
+  height: auto;
+}
+
+.property_detail p {
+  margin-left: 4px;
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--primary-color) !important;
+  margin-top: 0;
+}

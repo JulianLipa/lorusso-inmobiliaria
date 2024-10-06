@@ -1,0 +1,90 @@
+.main_deptos {
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+}
+
+.section_property{
+  margin: 0 5vw;
+}
+
+.button_deptos {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: black;
+  border: 0px solid rgba(0, 0, 0, 0);
+  transition: all 1s ease;
+  font-size: calc((3vw / 1.618) / 2);
+  padding: 0%;
+  padding-right: 1%;
+  font-weight: 200 !important;
+}
+
+.button_deptos:first-child {
+  font-weight: 400 !important;
+}
+
+.div_images{
+  width: 30vw;
+}
+
+.div_images img{
+  height: 70vh !important;
+}
+
+.div_images div{
+  width: 100%;
+}
+
+.button_deptos:nth-child(-n + 4)::after {
+  content: "/";
+  padding-left: 1%;
+  text-decoration: none;
+}
+
+.button_deptos:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 0px solid rgba(0, 0, 0, 0);
+  text-decoration: underline;
+}
+
+.button_deptos:hover::after {
+  text-decoration: none !important;
+}
+
+.property_card {
+  display: none !important;
+}
+
+.section_property{
+  display: flex;
+  justify-content: center;
+}
+
+.div_images{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section_property h2{
+  font-size: 2.5em;
+}
+
+.div_text{
+  padding-left: 4vw;
+}
+
+.deptos_header{
+  padding: 10px 5vw;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.price{
+  margin-bottom: 20px !important;
+  color: green;
+}
+
+.subtitle_p{
+  width: 45%;
+}

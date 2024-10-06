@@ -1,0 +1,129 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 5vw;
+  height: 10vh;
+  transition: all 1s ease;
+  z-index: 1;
+  position: fixed;
+  top: 1;
+}
+
+.header::after {
+  background-color: var(--primary-color);
+  opacity: var(--after-opacity, 1);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  left: 0;
+}
+
+.header_button {
+  z-index: 100;
+  width: auto;
+  transition: all 300ms ease-in-out;
+  top: 0 !important;
+}
+
+.header_button img {
+  height: 5vh;
+  width: auto;
+}
+
+.cart,
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  z-index: 100;
+  padding: 0 !important;
+}
+
+.cart {
+  height: 100%;
+}
+
+.cart div {
+  display: grid;
+  align-items: flex-start;
+  justify-self: right;
+}
+
+.textHeaderHover {
+  font-size: 0.8em;
+}
+
+.headerHover {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 101;
+  width: 25vw;
+  margin-right: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  padding: 2vw;
+  border-radius: 10px;
+  transition: opacity 1s ease, visibility 0s ease 1s;
+}
+
+.headerHover div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.headerHover p {
+  color: var(--primary-color) !important;
+  display: contents;
+  width: 300px;
+  font-size: 0.6em;
+}
+
+.cart:hover .headerHover {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s ease, visibility 0s ease 0s;
+}
+
+.mainHeaderTitle,
+.mainHeaderP {
+  color: white;
+}
+
+.cartDot {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.headerHover .title :hover {
+  font-weight: 400;
+}
+
+.headerHover svg {
+  position: absolute;
+  right: 0;
+  margin-right: 10%;
+  width: 4%;
+}
+
+.headerHover svg path {
+  stroke: var(--primary-color);
+}
