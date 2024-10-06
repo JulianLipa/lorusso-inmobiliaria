@@ -4,7 +4,7 @@ import { getAllProductsDB } from "@/app/actions";
 export async function GET() {
   const products = await getAllProductsDB();
   try {
-    return NextResponse.json({ message: "Ok", products });
+    return NextResponse.json({ message: "Ok", data:products });
   } catch (error) {
     return NextResponse.json({ message: "Error", error });
   }
