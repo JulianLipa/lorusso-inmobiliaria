@@ -1,10 +1,10 @@
 import React from "react";
-import { getOneProductDB, getAllProducts } from "@/app/actions";
+import { getOneProductDB, getAllProductsDB } from "@/app/actions";
 import PropertyCard from "./PropertyCard";
 import { useAppContext } from "@/app/contexts/AppContexts";
 
 const PropertyCardData = async ({ dataId }) => {
-  const response = await getAllProducts();
+  const response = await getAllProductsDB();
 
   if (!response) {
     return <PropertyCard data={response.products[dataId]} loading={true}/>;
