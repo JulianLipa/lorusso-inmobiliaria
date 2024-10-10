@@ -33,7 +33,6 @@
 
 .property_detail p {
   margin-left: 4px;
-  font-size: 1em;
   font-weight: 500;
   color: var(--primary-color) !important;
   margin-top: 0;

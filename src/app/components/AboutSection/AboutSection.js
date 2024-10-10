@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@/app/page.module.css";
+import "@/app/globals.css";
 
 const AboutSection = () => {
   return (
@@ -15,8 +16,7 @@ const AboutSection = () => {
         <h2 className="title">Nuestra Historia</h2>
         <p className="subtitle">
           Somos una <b>inmobiliaria familiar</b> ubicada en Catalinas Sur (La
-          Boca) con amplia trayectoria y reconocimiento en
-          <b>operaciones inmobiliarias</b>.
+          Boca) con amplia trayectoria y reconocimiento en <b> operaciones inmobiliarias</b>.
         </p>
         <p className="subtitle">
           Nos enorgullece ser parte de la <b>comunidad de La Boca</b>, donde

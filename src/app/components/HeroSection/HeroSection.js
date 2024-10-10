@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/app/page.module.css";
 import Link from "next/link";
+import "@/app/globals.css";
 
 const HeroSection = () => {
   return (
@@ -40,7 +41,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className={styles.buttons_div}>
-          <Link className="title main_button button" href="">Ver Propiedades</Link>
+          <Link className="subtitle main_button button" href="">Ver Propiedades</Link>
           <Link className="subtitle secondary_button button" href="">Conocenos</Link>
         </div>
       </div>

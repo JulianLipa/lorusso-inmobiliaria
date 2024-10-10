@@ -68,7 +68,7 @@ const PropertyCard = ({ data, loading }) => {
           Ver más
         </Link>
         <Link
-          className={`title main_button button ${styles.buttonProperty}`}
+          className={`title main_button button ${styles.buttonProperty} ${styles.buttonEye}`}
           href="#"
           onClick={cartAdd}
         >

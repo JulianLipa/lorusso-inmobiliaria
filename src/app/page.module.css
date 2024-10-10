@@ -76,7 +76,6 @@
 .main_title h2 {
   font-family: "Poppins";
   font-weight: 200;
-  font-size: 3.7em;
   text-align: start;
 }
 
@@ -84,7 +83,6 @@
   display: inline-block;
   font-family: "Montserrat";
   font-weight: 300;
-  font-size: 1.5em;
   z-index: 100;
   width: 70%;
 }
@@ -104,7 +102,6 @@
   z-index: 100;
   background-color: rgba(180, 180, 180, 0.7);
   border-radius: 10px;
-  font-size: 1em;
 }
 
 .data_section div {
@@ -119,7 +116,6 @@
 
 .data_section h2 b {
   font-weight: 600 !important;
-  font-size: 1.8vw;
 }
 
 .data_section h2,
@@ -152,7 +148,6 @@
 .home_about {
   display: flex;
   width: 70vw;
-  font-size: 0.8vw;
   margin-bottom: var(--padding);
 }
 
@@ -167,7 +162,7 @@
 }
 
 .home_about div {
-  width: 35%;
+  width: 50%;
 }
 
 .servicesSection,
@@ -184,7 +179,6 @@
   margin-bottom: var(--padding);
   overflow: hidden;
   z-index: 1;
-  font-size: 1vw !important;
   height: 18vh;
 }
 

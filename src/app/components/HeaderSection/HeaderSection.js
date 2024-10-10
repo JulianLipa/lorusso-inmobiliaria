@@ -9,7 +9,7 @@ import "@/app/globals.css";
 
 const HeaderSection = () => {
   const [offset, setOffset] = useState();
-  const { deptos, isDeptosPage } = useAppContext();
+  const { deptos, setDeptos } = useAppContext();
 
   /*useEffect(() => {
     if (isDeptosPage) {
@@ -43,8 +43,11 @@ const HeaderSection = () => {
     }
   }, [offset, isDeptosPage]);*/
 
-  const handleRemoveProduct = (depto, index) =>{
-    console.log(depto + index)
+  const handleRemoveProduct = (depto, deptoId) =>{
+    const restProducts = deptos.filter (d => d.data.id !== deptoId)
+    setDeptos(restProducts);
+    console.log(deptos)
+
   }
 
   return (
@@ -91,7 +94,9 @@ const HeaderSection = () => {
             fill="white"
           />
         </svg>
-        <div className={styles.headerHover}>
+        </div>
+      </Link>
+      <div className={styles.headerHover}>
           {deptos.length > 0 &&
             deptos.map((depto, index) => (
               <div key={index}>
@@ -107,7 +112,8 @@ const HeaderSection = () => {
                   viewBox="0 0 24 28"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  onClick={() => handleRemoveProduct(depto, index)}
+                  onClick={() => handleRemoveProduct(depto, depto.data.id)}
+                  className={styles.remove_icon}
                 >
                   <path
                     d="M0.75 5.25H23.25M12 10V22M8 10V22M16 10L16 22M5 5C5.16667 3.66667 6.8 1 12 1C17.2 1 18.8333 3.66667 19 5M2 5H22V22C22 24.7614 19.7614 27 17 27H7C4.23858 27 2 24.7614 2 22V5Z"
@@ -125,8 +131,6 @@ const HeaderSection = () => {
             </p>
           )}
           </div>
-        </div>
-      </Link>
     </div>
   );
 };

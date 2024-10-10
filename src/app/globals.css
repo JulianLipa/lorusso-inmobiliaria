@@ -15,7 +15,7 @@
   font-family: "Poppins";
   font-weight: 600;
   text-align: start;
-  font-size: 2em;
+  font-size: 1.3em;
   color: var(--primary-color);
 }
 
@@ -33,7 +33,7 @@ a {
 
 .button {
   border: 2px solid rgba(0, 0, 0, 0);
-  padding: 2%;
+  padding: 0.5em;
   border-radius: 10px;
   text-decoration: none;
   transition: all 1s ease;
@@ -47,32 +47,18 @@ a {
 }
 
 .main_button {
-  font-size: 1.5em;
   color: white;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   background-color: var(--primary-color);
 }
 
 .secondary_button {
   position: relative;
-  font-size: 1.5em;
   background-color: rgba(0, 0, 0, 0);
   display: inline-block;
   color: white;
-  font-weight: 400 !important;
-  border: 2px solid white;
-}
-
-.secondary_button::before {
-  border-radius: 10px;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-sizing: border-box;
-  pointer-events: none;
+  font-weight: 300 !important;
+  border: 1px solid white;
 }
 
 .imageShowed {
